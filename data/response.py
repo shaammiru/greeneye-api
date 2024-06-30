@@ -2,6 +2,17 @@ from pydantic import BaseModel
 
 
 class Plant(BaseModel):
+    science_name: str
+    en_name: str
+    id_name: str
+    description: str
+    benefits: str
+    effects: str
+    tips: str
+    image_url: list[str]
+
+
+class PlantWithIndex(BaseModel):
     index: int
     science_name: str
     en_name: str
@@ -26,8 +37,8 @@ class PredictModel(BaseModel):
 
 
 class DetailModel(BaseModel):
-    data: Plant
+    data: PlantWithIndex
 
 
 class SearchModel(BaseModel):
-    data: list[Plant]
+    data: list[PlantWithIndex]
