@@ -4,10 +4,15 @@ from data import plants, response
 router = APIRouter()
 
 
+@router.get("", name="List Plants", description="List Plants")
+async def list_plants():
+    return {"data": plants.plants}
+
+
 @router.get(
     "/{plant_id}",
-    name="Search Plant",
-    description="Search Plants",
+    name="Get Plant",
+    description="Get Plant by Id",
     response_model=response.DetailModel,
 )
 async def get_plant(plant_id: int):

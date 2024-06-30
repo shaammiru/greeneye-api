@@ -6,7 +6,7 @@ router = APIRouter()
 
 
 @router.post(
-    "/",
+    "",
     name="Search Plant",
     description="Search Plants",
     response_model=response.SearchModel,

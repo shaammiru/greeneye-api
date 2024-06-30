@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
-from router import predict, detail, search
+from router import plants, predict, search
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,7 +20,7 @@ app.add_middleware(
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 app.include_router(predict.router, prefix="/predict", tags=["predict"])
-app.include_router(detail.router, prefix="/plants", tags=["plants"])
+app.include_router(plants.router, prefix="/plants", tags=["plants"])
 app.include_router(search.router, prefix="/search", tags=["search"])
 
 

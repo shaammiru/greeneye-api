@@ -1,6 +1,14 @@
 class Plant:
     def __init__(
-        self, science_name, en_name, id_name, description, benefits, effects, tips
+        self,
+        science_name,
+        en_name,
+        id_name,
+        description,
+        benefits,
+        effects,
+        tips,
+        image_url,
     ):
         self.science_name = science_name
         self.en_name = en_name
@@ -9,6 +17,7 @@ class Plant:
         self.benefits = benefits
         self.effects = effects
         self.tips = tips
+        self.image_url = image_url
 
 
 ananas_comosus = Plant(
@@ -19,6 +28,12 @@ ananas_comosus = Plant(
     benefits="Nanas memiliki banyak manfaat bagi kesehatan, di antaranya:\n- Meningkatkan daya tahan tubuh\n- Menjaga kesehatan pencernaan\n- Melancarkan aliran darah\n- Mencegah kanker\n- Menjaga kesehatan jantung\n- Menjaga kesehatan kulit\n- Membantu menurunkan berat badan",
     effects="Nanas umumnya aman dikonsumsi oleh semua orang. Namun, perlu diingat bahwa nanas dapat menyebabkan beberapa efek samping pada beberapa orang, seperti:\n- Alergi: Orang yang alergi terhadap bromelain, enzim yang ditemukan dalam nanas, dapat mengalami reaksi alergi setelah mengkonsumsinya. Gejala alergi nanas dapat berupa gatal-gatal, ruam kulit, bengkak pada wajah dan tenggorokan, dan kesulitan bernapas.\n- Diare: Nanas mengandung serat yang tinggi. Konsumsi nanas yang berlebihan dapat menyebabkan diare pada orang yang tidak terbiasa mengkonsumsinya.\n- Mual dan muntah: Nanas mengandung asam sitrat yang tinggi. Konsumsi nanas yang berlebihan dapat menyebabkan mual dan muntah pada orang yang memiliki masalah pencernaan.",
     tips="- Konsumsi nanas dalam jumlah yang moderat untuk menghindari efek samping.\n- Jika Anda memiliki alergi terhadap bromelain, hindari mengkonsumsi nanas.\n- Jika Anda memiliki masalah pencernaan, konsultasikan dengan dokter sebelum mengkonsumsi nanas.",
+    image_url=[
+        "https://playgrounds.blob.core.windows.net/greeneye/flower_nanas.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/fruit_nanas.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/habit_nanas.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/leaf_nanas.jpg",
+    ],
 )
 
 artocarpus_heterophyllus = Plant(
@@ -29,6 +44,12 @@ artocarpus_heterophyllus = Plant(
     benefits="Nangka adalah buah bergizi yang menawarkan berbagai manfaat kesehatan. Berikut beberapa di antaranya:\n- Kaya akan vitamin dan mineral: Nangka merupakan sumber serat, vitamin C, potasium, dan nutrisi penting lainnya yang baik.\n- Membantu pencernaan: Kandungan serat yang tinggi dalam nangka dapat meningkatkan keteraturan dan kesehatan usus.\n- Mendukung kontrol gula darah: Nangka dapat membantu mengatur kadar gula darah karena kandungan seratnya dan adanya senyawa seperti lignan.\n- Memiliki sifat anti-inflamasi: Nangka mengandung antioksidan dan senyawa lain yang dapat membantu mengurangi peradangan dalam tubuh.\n- Sumber prebiotik potensial: Prebiotik adalah serat yang memberi makan bakteri baik dalam usus Anda, meningkatkan kesehatan usus.",
     effects="Nangka umumnya aman dikonsumsi oleh kebanyakan orang. Namun, ada beberapa hal yang perlu diperhatikan:\n- Reaksi alergi: Orang dengan alergi serbuk sari birch lebih mungkin mengalami reaksi alergi terhadap nangka.\n- Kadar gula darah: Karena potensinya menurunkan gula darah, penderita diabetes atau yang sedang mengonsumsi obat diabetes sebaiknya berkonsultasi dengan dokter sebelum mengonsumsi nangka.\n- Masalah pencernaan: Konsumsi nangka yang berlebihan dapat menyebabkan kembung atau diare pada beberapa orang.",
     tips="- Pilih nangka yang masih keras dan memiliki aroma sedikit manis. Hindari nangka yang lembek atau berbau tajam.\n- Nangka dapat dinikmati dalam keadaan matang atau mentah. Nangka matang bisa dimakan langsung atau digunakan dalam makanan penutup. Nangka muda biasanya digunakan sebagai pengganti daging dalam masakan gurih.\n- Saat memotong nangka, gunakan sarung tangan untuk melindungi tangan Anda dari getah lengket.",
+    image_url=[
+        "https://playgrounds.blob.core.windows.net/greeneye/flower_nangka.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/fruit_nangka.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/habit_nangka.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/leaf_nangka.jpg",
+    ],
 )
 
 carica_papaya = Plant(
@@ -39,6 +60,12 @@ carica_papaya = Plant(
     benefits="Pepaya memiliki banyak manfaat bagi kesehatan, di antaranya:\n- Meningkatkan pencernaan: Enzim papain dalam pepaya dapat membantu memecah protein dalam makanan dan meningkatkan pencernaan.\n- Menjaga kesehatan kulit: Kandungan vitamin C dan antioksidan dalam pepaya dapat membantu menjaga kesehatan kulit dan melawan penuaan dini.\n- Menjaga kesehatan jantung: Pepaya mengandung serat, kalium, dan antioksidan yang baik untuk kesehatan jantung.\n- Menjaga kesehatan mata: Kandungan vitamin A dalam pepaya dapat membantu menjaga kesehatan mata dan mencegah penyakit mata.\n- Meningkatkan daya tahan tubuh: Pepaya mengandung vitamin C dan antioksidan yang dapat meningkatkan sistem kekebalan tubuh.",
     effects="Pepaya umumnya aman dikonsumsi oleh kebanyakan orang. Namun, ada beberapa hal yang perlu diperhatikan:\n- Reaksi alergi: Orang yang alergi terhadap lateks mungkin juga alergi terhadap pepaya.\n- Interaksi obat: Pepaya dapat berinteraksi dengan beberapa obat, seperti obat darah, obat diabetes, dan obat tekanan darah. Konsultasikan dengan dokter sebelum mengonsumsi pepaya jika Anda sedang mengonsumsi obat-obatan tersebut.\n- Efek samping: Konsumsi pepaya dalam jumlah yang berlebihan dapat menyebabkan diare atau gangguan pencernaan pada beberapa orang.",
     tips="- Pilih pepaya yang matang dengan warna kulit oranye yang cerah. Pepaya yang matang memiliki aroma manis dan lembut.\n- Pepaya dapat dimakan langsung, dijadikan jus, atau digunakan dalam salad buah.\n- Hindari mengonsumsi biji pepaya, karena dapat menyebabkan gangguan pencernaan.",
+    image_url=[
+        "https://playgrounds.blob.core.windows.net/greeneye/flower_pepaya.jpeg",
+        "https://playgrounds.blob.core.windows.net/greeneye/fruit_pepaya.jpeg",
+        "https://playgrounds.blob.core.windows.net/greeneye/habit_pepaya.JPG",
+        "https://playgrounds.blob.core.windows.net/greeneye/leaf_pepaya.jpeg",
+    ],
 )
 
 cocos_nucifera = Plant(
@@ -49,6 +76,12 @@ cocos_nucifera = Plant(
     benefits="Kelapa memiliki banyak manfaat bagi kesehatan, di antaranya:\n- Menjaga kesehatan jantung: Kelapa mengandung asam lemak jenuh yang baik untuk kesehatan jantung.\n- Menjaga kesehatan kulit: Minyak kelapa dapat membantu menjaga kelembapan kulit dan melawan infeksi kulit.\n- Meningkatkan energi: Air kelapa mengandung elektrolit yang dapat membantu menghidrasi tubuh dan meningkatkan energi.\n- Menjaga kesehatan rambut: Minyak kelapa dapat membantu menjaga kesehatan rambut dan mencegah kerusakan akibat panas dan polusi.\n- Meningkatkan sistem kekebalan tubuh: Kelapa mengandung asam laurat, yang memiliki sifat antibakteri, antivirus, dan antijamur.",
     effects="Kelapa umumnya aman dikonsumsi oleh kebanyakan orang. Namun, ada beberapa hal yang perlu diperhatikan:\n- Kandungan lemak: Kelapa mengandung lemak jenuh yang tinggi. Konsumsi kelapa dalam jumlah yang berlebihan dapat meningkatkan risiko penyakit jantung.\n- Alergi: Beberapa orang mungkin alergi terhadap kelapa. Gejala alergi kelapa dapat berupa gatal-gatal, ruam kulit, bengkak pada wajah dan tenggorokan, dan kesulitan bernapas.\n- Interaksi obat: Minyak kelapa dapat berinteraksi dengan beberapa obat, seperti obat darah, obat diabetes, dan obat kolesterol. Konsultasikan dengan dokter sebelum mengonsumsi minyak kelapa jika Anda sedang mengonsumsi obat-obatan tersebut.",
     tips="- Pilih kelapa yang beratnya terasa penuh dan memiliki suara gemeretak saat dikocok. Hindari kelapa yang terasa ringan atau berbunyi kosong saat dikocok.\n- Kelapa dapat dimakan langsung, diolah menjadi santan, minyak kelapa, atau produk makanan lainnya.\n- Hindari mengonsumsi kelapa dalam jumlah yang berlebihan untuk menghindari efek samping.",
+    image_url=[
+        "https://playgrounds.blob.core.windows.net/greeneye/flower_kelapa.jpeg",
+        "https://playgrounds.blob.core.windows.net/greeneye/fruit_kelapa.jpeg",
+        "https://playgrounds.blob.core.windows.net/greeneye/habit_kelapa.jpeg",
+        "https://playgrounds.blob.core.windows.net/greeneye/leaf_kelapa.jpeg",
+    ],
 )
 
 musa_spp = Plant(
@@ -59,6 +92,12 @@ musa_spp = Plant(
     benefits="Pisang memiliki banyak manfaat bagi kesehatan, di antaranya:\n- Menjaga kesehatan pencernaan: Pisang mengandung serat yang baik untuk pencernaan dan mencegah sembelit.\n- Menjaga kesehatan jantung: Pisang mengandung kalium dan serat yang baik untuk kesehatan jantung.\n- Meningkatkan energi: Pisang mengandung karbohidrat yang dapat memberikan energi instan.\n- Menjaga kesehatan kulit: Pisang mengandung vitamin C dan antioksidan yang baik untuk kesehatan kulit.\n- Meningkatkan mood: Pisang mengandung triptofan, zat yang dapat meningkatkan mood dan mengurangi stres.",
     effects="Pisang umumnya aman dikonsumsi oleh kebanyakan orang. Namun, ada beberapa hal yang perlu diperhatikan:\n- Kandungan kalori: Pisang mengandung kalori yang tinggi. Konsumsi pisang dalam jumlah yang berlebihan dapat menyebabkan penambahan berat badan.\n- Alergi: Beberapa orang mungkin alergi terhadap pisang. Gejala alergi pisang dapat berupa gatal-gatal, ruam kulit, bengkak pada wajah dan tenggorokan, dan kesulitan bernapas.\n- Interaksi obat: Pisang dapat berinteraksi dengan beberapa obat, seperti obat darah, obat diabetes, dan obat tekanan darah. Konsultasikan dengan dokter sebelum mengonsumsi pisang jika Anda sedang mengonsumsi obat-obatan tersebut.",
     tips="- Pilih pisang yang berkulit kuning cerah dan tidak terlalu lembek. Hindari pisang yang berwarna hijau atau berbintik hitam.\n- Pisang dapat dimakan langsung, diolah menjadi jus, atau digunakan dalam makanan penutup.\n- Hindari mengonsumsi pisang dalam jumlah yang berlebihan untuk menghindari efek samping.",
+    image_url=[
+        "https://playgrounds.blob.core.windows.net/greeneye/flower_pisang.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/fruit_pisang.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/habit_pisang.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/leaf_pisang.jpg",
+    ],
 )
 
 nephelium_lappaceum = Plant(
@@ -69,6 +108,12 @@ nephelium_lappaceum = Plant(
     benefits="Rambutan memiliki banyak manfaat bagi kesehatan, di antaranya:\n- Menjaga kesehatan kulit: Rambutan mengandung vitamin C dan antioksidan yang baik untuk kesehatan kulit dan melawan penuaan dini.\n- Meningkatkan daya tahan tubuh: Rambutan mengandung vitamin C dan antioksidan yang dapat meningkatkan sistem kekebalan tubuh.\n- Menjaga kesehatan mata: Kandungan vitamin A dalam rambutan dapat membantu menjaga kesehatan mata dan mencegah penyakit mata.\n- Meningkatkan energi: Rambutan mengandung karbohidrat dan gula alami yang dapat memberikan energi instan.\n- Menjaga kesehatan jantung: Rambutan mengandung serat dan antioksidan yang baik untuk kesehatan jantung.",
     effects="Rambutan umumnya aman dikonsumsi oleh kebanyakan orang. Namun, ada beberapa hal yang perlu diperhatikan:\n- Alergi: Beberapa orang mungkin alergi terhadap rambutan. Gejala alergi rambutan dapat berupa gatal-gatal, ruam kulit, bengkak pada wajah dan tenggorokan, dan kesulitan bernapas.\n- Kandungan gula: Rambutan mengandung gula alami yang tinggi. Konsumsi rambutan dalam jumlah yang berlebihan dapat meningkatkan kadar gula darah pada penderita diabetes.",
     tips="- Pilih rambutan yang berkulit merah dan tidak terlalu lembek. Hindari rambutan yang berwarna hijau atau berbintik hitam.\n- Rambutan dapat dimakan langsung atau diolah menjadi jus.\n- Hindari mengonsumsi rambutan dalam jumlah yang berlebihan untuk menghindari efek samping.",
+    image_url=[
+        "https://playgrounds.blob.core.windows.net/greeneye/flower_rambutan.JPG",
+        "https://playgrounds.blob.core.windows.net/greeneye/fruit_rambutan.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/habit_rambutan.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/leaf_rambutan.jpg",
+    ],
 )
 
 salacca_zalacca = Plant(
@@ -79,6 +124,12 @@ salacca_zalacca = Plant(
     benefits="Salak memiliki banyak manfaat bagi kesehatan, di antaranya:\n- Menjaga kesehatan pencernaan: Salak mengandung serat yang baik untuk pencernaan dan mencegah sembelit.\n- Menjaga kesehatan kulit: Salak mengandung vitamin C dan antioksidan yang baik untuk kesehatan kulit dan melawan penuaan dini.\n- Meningkatkan energi: Salak mengandung karbohidrat dan gula alami yang dapat memberikan energi instan.\n- Menjaga kesehatan jantung: Salak mengandung serat dan antioksidan yang baik untuk kesehatan jantung.\n- Menjaga kesehatan mata: Kandungan vitamin A dalam salak dapat membantu menjaga kesehatan mata dan mencegah penyakit mata.",
     effects="Salak umumnya aman dikonsumsi oleh kebanyakan orang. Namun, ada beberapa hal yang perlu diperhatikan:\n- Alergi: Beberapa orang mungkin alergi terhadap salak. Gejala alergi salak dapat berupa gatal-gatal, ruam kulit, bengkak pada wajah dan tenggorokan, dan kesulitan bernapas.\n- Kandungan gula: Salak mengandung gula alami yang tinggi. Konsumsi salak dalam jumlah yang berlebihan dapat meningkatkan kadar gula darah pada penderita diabetes.",
     tips="- Pilih salak yang berkulit berwarna coklat keemasan dan tidak terlalu lembek. Hindari salak yang berwarna hijau atau berbintik hitam.\n- Salak dapat dimakan langsung, diolah menjadi jus, atau digunakan dalam makanan penutup.\n- Hindari mengonsumsi salak dalam jumlah yang berlebihan untuk menghindari efek samping.",
+    image_url=[
+        "https://playgrounds.blob.core.windows.net/greeneye/flower_salak.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/fruit_salak.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/habit_salak.jpg",
+        "https://playgrounds.blob.core.windows.net/greeneye/leaf_salak.jpg",
+    ],
 )
 
 plants = [

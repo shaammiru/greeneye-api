@@ -11,7 +11,7 @@ router = APIRouter()
 
 
 @router.post(
-    "/",
+    "",
     name="Predict Image",
     description="Predict Plant Image",
     response_model=response.PredictModel,

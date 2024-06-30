@@ -9,6 +9,7 @@ class Plant(BaseModel):
     benefits: str
     effects: str
     tips: str
+    image_url: list[str]
 
 
 class Predict(BaseModel):
