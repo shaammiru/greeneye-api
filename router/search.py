@@ -17,7 +17,7 @@ async def search_plants(keyword: str = Query(..., min_length=3, max_length=50)):
         plant_results = []
 
         for index in results:
-            plant_results.append(plants.plants[index])
+            plant_results.append({"index": index, **plants.plants[index].to_dict()})
 
         return {"data": plant_results}
     except Exception as e:

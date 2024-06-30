@@ -2,6 +2,7 @@ from pydantic import BaseModel
 
 
 class Plant(BaseModel):
+    index: int
     science_name: str
     en_name: str
     id_name: str

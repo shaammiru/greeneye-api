@@ -19,6 +19,18 @@ class Plant:
         self.tips = tips
         self.image_url = image_url
 
+    def to_dict(self):
+        return {
+            "science_name": self.science_name,
+            "en_name": self.en_name,
+            "id_name": self.id_name,
+            "description": self.description,
+            "benefits": self.benefits,
+            "effects": self.effects,
+            "tips": self.tips,
+            "image_url": self.image_url,
+        }
+
 
 ananas_comosus = Plant(
     science_name="Ananas comosus",
